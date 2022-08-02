@@ -1,0 +1,25 @@
+함수를 호출할 때 함수의 파라미터를 전달하지 않으면, 함수 내에선 해당 파라미터를 undefined로 구분한다.
+파라미터가 함수에서 꼭 필요하다면 함수를 호출하는 곳에서 파라미터 값을 전달하지 못하면 에러가 발생한다.
+
+그래서 함수를 호출할 때 파라미터에 값이 전달됐는지 확인하는 코드가 필요하다.
+<!DOCTYPE html>
+<html>
+    function say(message){
+        if(message != undefined)
+            console.log(message);
+        else
+            console.log(message);
+    }
+    say();
+</html>
+
+default Function Parameter는 함수 호출 시 파라미터가 전달되지 않았음을 사용할 기본값을 설정한다.
+<html>
+    function say(message="파라미터가 전달되지 않았다."){
+        if(message != undefined)
+            console.log(message);
+        else
+            console.log(message);
+    }
+    say();
+</html>

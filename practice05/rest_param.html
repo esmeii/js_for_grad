@@ -1,0 +1,13 @@
+rest parameter는 파라미터로 몇 개의 파라미터가 전달될지 모를 경우 매우 유용하게 사용할 수 있다.
+파라미터를 선언할 때 "...파라미터명" 형식을 사용하면 함수를 호출할 때마다 파라미터 값의 개수에 상관없이 이용 가능하다.
+
+function sum(...args){
+    let total = 0;
+    for(let x of args){
+        total += x;
+    }
+    return total;
+}
+
+sum(2,3,4,5,6);
+sum(1,3);

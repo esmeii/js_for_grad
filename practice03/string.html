@@ -1,0 +1,39 @@
+
+<!--length-->
+let txt = "ABCDEFG";
+let sln = txt.length;
+
+<!--indexOf-->
+let str = "Plz locate where locate occurs!";
+let pos = str.indexOf("locate");  <!--인덱스 반환-->
+<!--lastIndexOf-->
+
+<!--slice-->
+let str = "Apple, Banana, Kiwi";
+let res = str.slice(7,13); //Banana
+<!--substring, substr-->
+
+<!--replace-->
+let str = "Please Visit Seoul and Seoul";
+let n = str.replace("Seoul", "Jeju"); 
+<!--첫 번째 서울만 바뀜-->
+
+let n = str.replace(/Seoul/g, "Jeju");
+<!--모든 Seoul 이 바뀜-->
+
+<!--toUpperCase, toLowerCase-->
+
+<!---trim-->
+<!-- 공백을 제거한다-->
+
+
+<!--padStart(), padEnd-->
+<!--문자열 앞에 지정된 문자를 지정된 길이만큼 추가-->
+let str = "5";
+str = str.padStart(4,0); //0005
+
+<!--split-->
+<!--문자열을 분리해서 배열로 반환하는 함수-->
+let birthday = "2000-06-07";
+let arr2     = birthday.split("-");
+console.log(arr2); //["2000","06","07"]

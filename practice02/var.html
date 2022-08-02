@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<!--Object                           -->
+const Person = {
+    firstName: "John",
+    lastName : "Doe",
+    age      : 50,
+    eyeColor : "blue"
+};
+
+<!--데이터를 변경하는 방법-->
+Person["age"] = 51; 
+Person.age    = 51;
+
+<!---데이터를 가져오는 방법-->
+console.log(person["firstName"]);
+console.log(person.firstName);
+
+<!--Array                           -->
+const cars = ["Saab", "Volvo", "BMW"];
+console.log(cars[0]); <!--Saab-->

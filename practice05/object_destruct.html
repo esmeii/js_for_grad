@@ -1,0 +1,15 @@
+Object에 저장된 데이터를 분해하여 필요한 데이터만 바로 추출한다.
+
+function getPerson(){ 
+    return {
+        firstName : "John",
+        lastName  : "Doe",
+        age       : 32,
+        email     : "john@dfdsf.com",
+        city      : "New York",
+        country   : "USA"
+    };
+}
+
+let {firstName, lastName} = getPerson();
+//firstName 인 John과 lastName 인 Doe를 각각 변수에 저장할 수 있다.

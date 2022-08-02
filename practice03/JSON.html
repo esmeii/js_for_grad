@@ -1,0 +1,18 @@
+let data = {
+    "employees" : [
+        {"firstName:"John", "lastName":"Doe"},
+        {"firstName:"Abna", "lastName":"Smith"},
+        {"firstName:"Peter", "lastName":"Jones"}
+    ]
+};
+
+let stringValue = JSON.stringify(data);
+
+let obj         = JSON.parse(stringValue);
+
+JSON.stringify : 데이터를 서버에 전송하려면 데이터 형태를 문자열 형태로 바꿔야 한다.
+                이 함수는 Object를 문자열로 변환해 준다.
+JSON.parse     : 서버로부터 응답받은 데이터는 문자열 형태이다.
+                이 함수를 통해 Object로 변환한다.
+
+                
